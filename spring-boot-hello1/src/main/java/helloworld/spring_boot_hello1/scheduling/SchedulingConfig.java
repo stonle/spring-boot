@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
  * 其中 @EnableScheduling 注解的作用是发现注解@Scheduled的任务并后台执行。
  */
 @Configuration
-@EnableScheduling
+//@EnableScheduling
 public class SchedulingConfig {
    @Scheduled(cron = "0/20 * * * * ?") // 每20秒执行一次
    public void scheduler() {

@@ -45,6 +45,37 @@
       
       
       <!-- 使用JdbcTemplate类需要加入（如果在JPA已经加入的话，这个步骤就可以忽略了） -->
+      
+      <!-- spring boot连接池配置 -->
+      <!--
+         1、加入druid依赖包
+         2、在application.properties中加入数据库源等参数
+         3、编写druid servlet和filter提供监控页面 
+       -->
+      <dependency>
+		 <groupId>com.alibaba</groupId>
+		 <artifactId>druid</artifactId>
+		 <version>1.0.18</version>
+	  </dependency>
+	  
+	  <!-- 使用模板 thymeleaf -->
+	  <!--
+	           整体步骤：  1、在 pom.xml 中引入 thymeleaf; 
+	           2、  如何关闭 thymeleaf 缓存
+	           3、编写模板文件 .html
+	   -->
+	  <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-thymeleaf</artifactId>
+	  </dependency>
+      
+      <!-- 使用freemarker -->
+      <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-freemarker</artifactId>
+      </dependency>
+      
+      
       <dependency>
 	      <groupId>junit</groupId>
 	      <artifactId>junit</artifactId>
